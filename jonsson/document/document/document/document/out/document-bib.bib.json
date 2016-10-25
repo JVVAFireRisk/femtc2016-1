@@ -1,0 +1,28 @@
+{
+  "_preamble": "",
+  "_comments": "",
+  "karlsson:enclosure": {
+    "id": "Karlsson:Enclosure",
+    "type": "book",
+    "author": [
+      {
+        "family": "Karlsson",
+        "given": "Björn"
+      },
+      {
+        "family": "Quintere",
+        "given": "James"
+      }
+    ],
+    "title": "Enclosure Fire Dynamics",
+    "issued": {
+      "date-parts": [
+        [
+          "1999"
+        ]
+      ]
+    },
+    "publisher": "CRC Press",
+    "_line": "references.bib:1"
+  }
+}

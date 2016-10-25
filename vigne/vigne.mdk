@@ -1,0 +1,313 @@
+[INCLUDE=style/lncs]
+Title         : ADVANCED SIMULATIONS FOR BUILDING DESIGN
+Subtitle      : Best Practice and Future developments 
+
+Author        : Gabriele Vigne
+Affiliation   : JVVA Fire & Risk, University of Jaén
+Email         : gabriele.vigne@jvvafire.com
+
+Author        : Jimmy Jönsson
+Affiliation   : JVVA Fire & Risk
+Email         : jimmy.jonsson@jvvafire.com
+
+Bibliography  : references.bib
+Logo          : False
+Tex Header    :
+  \def\refname{&name-references;}
+name-references : REFERENCES
+
+[TITLE]
+
+~ Abstract
+Advanced simulations are becoming a common approach for dealing with complex fire safety problems. The use of specially developed software for fire and evacuation modelling allows fire safety problems to be solved in a way that was not possible just a few decades ago.
+
+Performing advanced simulations requires a deep knowledge of both Fire Engineering and Fire Engineering Modelling. Engineers are often responsible for the life safety analysis, and are equipped with a number of tools to aid the design process. One challenge is to understand how to use such tools, but of equal and paramount importance is understanding their limitations, and thus when their use is not appropriate.
+
+Nowadays advanced modelling forms a natural part of a Performance Based Design approach. Common areas of practice are Evacuation modelling and Fire & Smoke modelling and often a combination of both when assessing the fire safety performance of a building. Although both the means of escape for a building and a smoke control system could be designed following prescriptive requirements, many examples exist where a performance based approach is the only way forward and advanced computer models become an essential part of the Fire Safety Design.
+
+Safe, robust, and practical solutions that account for human behaviour as well as advanced tools that predict the fire and smoke behaviour in a building are an essential component of any building design. Designers need to provide innovative designs whilst providing safe buildings. 
+
+In particular, the paper shows a series of case studies when advanced modelling were successfully utilized, these are:  
+
+•	A large international airport
+
+•	A major interchange station
+
+•	An existing multipurpose building (heritage protected)
+
+•	A large logistics centre
+
+The computer models used to perform the analyses were Pathfinder and Fire Dynamics Simulator.
+JVVA has used such models to evaluate, optimize and design singular buildings. The intention of this paper is to show how advanced modelling has been a vital part of the design process.
+
+~
+
+[editor]: https://www.madoko.net/editor.html "Madoko.net Editor"
+[reference-manual]: http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html "Madoko Reference Manual"
+[femtc2016]: https://github.com/thunderheadeng/femtc2016
+[emaillink]: mailto:conference@thunderheadeng.com "conference@thunderheadeng.com"
+
+# INTRODUCTION { #sec-intro }
+The increased use of performance-based design to develop fire safety solutions requires, for complex buildings, the use of advanced tools in order to get answers that would not have been possible using hand calculations and simplified models. Spaces can be particularly vast, evacuation paths particularly complicated and the architectural layout might impose restrictions in such a way that the prescriptive requirements cannot be fulfilled or, in some case, are just the wrong approach for a particular space and use.
+Within a complex performance-based fire safety project, advanced modelling covers an important part but only when it is well integrated into the overall design process. The graph below, from the SFPE Handbook, shows the Performance based design flowchart and in red where advanced modelling is situated within the overall process. 
+
+[PBD Chart]: images/PBD-Chart.jpg "PBD Chart" { width:auto; max-width:90% }
+~ Figure { #PBD Chart; caption:"Performance based design flow chart."}
+![PBD Chart]
+~
+
+Each element of the flow chart are essential and responsible for the final outcome. An analysis undertaken through advanced modelling can be right or wrong depending on how those earlier elements were introduced in the overall analysis itself.
+Once the evaluation phase is reached in the performance base design process, it is time to get into the modelling exercise. Figure X, below, shows the process of determining the right model to be used in the analysis. The model can be a simple algebraic correlations that can be solved with a calculator, a zone models or lumped parameter models that represent a space as a small number of elements, to computational fluid dynamics or field models which approximate a space as a large number of discrete volumes.
+
+[Modelling_flowchart]: images/Modelling_flowchart.png "Modelling_flowchart" { width:auto; max-width:90% }
+~ Figure { #PBD Chart; caption:"Fire Model Selection Flow Chart."}
+![Modelling_flowchart]
+~
+Story of success exists where the use of performance-based design solutions has leaded to truly advanced solutions which have benefited the client and the building.
+Four examples have been selected and shown in this paper, outlining the role of the advanced modelling in the overall design process.
+
+# CASES STUDIES { #sec-intro }
+## Large Airport
+The first example is the largest and busiest airport in Spain. The overall objective of the project was to evaluate the current fire safety level for all existing terminals. The study was specifically orientated at fire risks, the main objective was to identify additional fire safety measures that could be incorporated into the building and also quantify how these measures impacted on the current fire safety level.
+Specifically for this example, the largest terminal (T4) is shown. Due to the complexity and dimension of the building, advanced modelling was necessary.
+Both advanced evacuation analysis and Fire and Smoke modelling were performed for the terminal with the aim of evaluating the efficiency of the current evacuation routes together with the efficiency of the smoke control system, when available. For this analysis, Pathfinder 2015 was used for the evacuation modelling and FDS v.6.2.0 for the fire and smoke modelling.
+The first step in the analysis was to evaluate the existing configuration. The following image shows an example, commercial area in the airside departures level, during a simulated evacuation. As can be seen on the image a few large bottleneck areas were created using the current evaluation strategy for this level. 
+
+![Barajas4]
+~ Figure { #Barajas4; caption:"Evaluation of the current configuration of the area with Pathfinder."}
+[Barajas4]: images/Barajas4.png "Barajas4" { width:auto; max-width:90% }
+~
+
+The analysis of the current configuration shown various conflictive points where people were stuck or simply the evacuation was not as fluid as it could have been. Minor changes have been introduced to the evacuation routes with almost no impact to the building with a substantial improvement of the building safety. By the increment of two corridors width together with the redirection of the part of the occupants toward the bridges instead of into a long corridors that was currently in use, the overall evacuation time was reduce by means of 30%.
+
+![Barajas_6]
+~ Figure { #Barajas_6; caption:"Concepts included in the improved solution."}
+[Barajas_6]: images/Barajas_6.png "Barajas_6" { width:auto; max-width:90% }
+~
+[Barajas_6]: images/Barajas_6.jpg "Barajas_6" { width:auto; max-width:90% }
+
+![Barajas_5]
+~ Figure { #Barajas_5; caption:"Summary of the results (on the left the original configuration, on the right the proposed one)."}
+[Barajas_5]: images/Barajas_5.jpg "Barajas_5" { width:auto; max-width:90% }
+~
+
+In addition, there were several exits that were sub-utilized and did not really add value to the evacuation. By the introduction of a clearer wayfinding system (signage), omitting exits and creating additional exits (using existing non-used routes), there was a clear improvement in both evacuation time (reduced about 40 %) and in regards to the bottlenecks (which were heavily reduced as well). 
+Together with the evacuation analysis, conditions for the occupants in case of fire have been assessed through fire and smoke modelling. The whole terminal has been modelled since it represented a single unique large compartment. The model was processed with FDS v.6.2.0, the domain was split into 30 different meshes assigned to 30 MPI processes, with a resolution varying from 0.10 m in the fire region up to 0.40 m in the regions far from the fire.
+
+![Barajas1]
+~ Figure { #Barajas_1; caption:"FDS Model of the terminal, birdeye view."}
+[Barajas1]: images/Barajas1.png "Barajas1" { width:auto; max-width:90% }
+~
+
+![Barajas2]
+~ Figure { #Barajas_2; caption:"FDS Model of the terminal, lateral view."}
+[Barajas2]: images/Barajas2.png "Barajas2" { width:auto; max-width:90% }
+~
+
+Text styling, links, sub- and super-script, footnotes and other topics
+are covered in section [Syntax: Inline
+elements](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html#sec-syntax--inline-elements)
+of the manual.
+
+Headings, Figures and Tables, Lists, Code Blocks, Mathematics, etc. are
+covered in section [Syntax: Block
+elements](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html#sec-syntax--block-elements)
+of the manual.
+
+The target length for submitted and invited papers is about eight pages.
+This length includes all figures and tables. However, because the
+Proceedings will not be printed on paper, there is no maximum limit on
+the number of pages. You are free to exceed the target length of eight
+pages.
+
+Please watch this short YouTube Video for a tutorial on how to use the system as intended.
+
+# MAIN HEADINGS LIKE THIS STYLE
+Main Headings are all upper case letters and underlined. In Madoko, a
+Single '#' symbol at the start of the line, followed by a space and then
+the heading text.
+
+## Subheadings Like This Style
+Subheadings within sections follow the same format as section titles, but
+with upper and lower case. In Madoko, a Double '#' symbol at the start of
+the line, followed by a space and then the heading text.
+
+### Subsubheadings like this style
+Subsubheadings have no underline, and only the first letter capitalized.
+In Madoko, a Triple '#' symbol at the start of the line, followed by a
+space and then the heading text.
+
+# FIGURES, TABLES, AND EQUATIONS
+Original drawings and photos may be included in your paper as figures.
+Diagrams may be in color.
+
+Figures and tables should immediately follow first mention of them in the
+text and can be placed in one column, or in the case of wider figures,
+can cover two columns (but only at the top or bottom of the page). The
+caption should start with either the word “figure” spelled out or
+abbreviated, followed by the figure number (i.e., Figure 1 or Fig. 1).
+The figure caption should be followed by a single line of space before
+the text resumes.
+
+## Figures
+Figure [#fig-smokeview] in Section [#sec-intro] shows an image from an
+older version of Smokeview. Note that you can drag&drop images into the
+editor pane to include them in the document, and similarly with bibtex
+files, latex style files, etc.
+
+~ Figure { #fig-smokeview; caption:"Illustration of placement of figure and caption. (use the `.wide` class for wide figure)."}
+![Ex1_0]
+~
+[Ex1_0]: images/Ex1_0.png "Ex1_0" { width:auto; max-width:90% }
+
+~ Note
+Images larger than about 1Mb in size will be rejected by the Madoko.net server.
+~
+
+## Tables
+Table [#table-sample] shows an example full width table figure.
+
+~ TableFigure { #table-sample; caption: "Modelle mit unterschiedlich geschätztem baseline hazard"; .wide }
+|                | $c(t)$                               ||||
+|                |---------|---------|---------|-----------|
+|                | (A0)    | (A1)    | (A2)    | (A3)      |
+|                | ohne    | Log     | Polynom | Stückweise|
+|                |         |         |         | konstant  |
+|:---------------|:-------:|:-------:|:-------:|:---------:|
+| Log likelihood | -6.798  | -6.733  | -6.715  | -6.686    |
+| Pseudeo $R^{2}$| 0,048   | 0,057   | 0,059   | -         |
+| AIC            | 13.615  | 13.489  | 13.456  | 13.483    |
+| BIC            | 13.711  | 13.594  | 13.580  | 14.009    |
+| N              | 105.484 | 105.484 | 105.484 | 105.484   |
+|----------------|---------|---------|---------|-----------|
+~
+
+## Equations
+Standard terminology should be used in equations. If possible, keep
+equations to one column. All equations should be numbered. A definition
+of $e$ is shown in Equation [#euler]:
+
+~ Equation { #euler }
+e = \lim_{n\to\infty} \left( 1 + \frac{1}{n} \right)^n
+~
+
+Or to use &logolatex; to align equations.
+
+~ Equation { #eq-alignment; caption:"Alignment example" }
+\begin{aligned} 
+ f(x)  &= a x^2+b x +c   &   g(x)  &= d x^3 \\
+ f'(x) &= 2 a x +b       &   g'(x) &= 3 d x^2
+\end{aligned}
+~
+
+# FUN CONTENT EXAMPLES
+Let's program some JavaScript:
+``` javascript
+function hello() {
+  return "hello world!"
+}
+```
+Here is a footnote[^fn] reference.
+[^fn]: This is the content of the example footnote. 
+    You can continue a footnote by indenting content.
+    And notice the back link.
+
+# BIBLIOGRAPHY AND REFERENCES
+When references are used in the text, tie them to an alphabetical (by
+principal author) list of references to be included as the last item of
+your paper. The format commonly used in scientific literature follows:
+
+Smith, J. S., Bloggs, R. T. and Jones, E. R. (1974), "Magnetic Anomalies
+in Geothermal Systems", Journal of Fluid Mechanics, 254, 73-79
+
+Leslie Lamport, LaTeX: A Document Preparation System (2nd Edition), Addison-Wesley, 1994
+
+When using Madoko, edit the content of the .bib file in the document
+folder, and use the reference methods as shown in the [Bibliography and
+Citations
+Section](http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html#sec-bib)
+of the Madoko Manual.
+
+A bibliography file consists of all your references in the BibTeX format, for example:
+
+    @BOOK{ Knuth:TeX,  
+        author   = "Knuth, Donald E.",  
+        title    = "The {\TeX} book",  
+        publisher= "Addison-Wesley",  
+        year     = 1984  
+    }
+
+Entries in the bibliography files can now be referenced using semi-colon
+separated references, for example:
+``` Markdown 
+Read about LaTeX and TeX [@Knuth:TeX; @Lamport:LaTeX].
+```
+Results in: Read about LaTeX and TeX [@Knuth:TeX; @Lamport:LaTeX].
+
+Please include full title of journal articles or other references,
+journal, volume, date, pages. There is a nice [table on
+Wikipedia](https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#BibTeX)
+that shows all of the different data fields for the BibTeX file.
+
+# PAPER DEADLINE
+Your paper, in final form, must be received by October 15th, 2016. The
+best way to edit and submit is to use the Madoko [editor] to edit your
+document in the 'authoring' branch of the GitHub [femtc2016] repository.
+If you choose to use some other document format and editing tool, PDF
+format is preferred, but ODT, DOC, or DOCX formats are acceptable. Please
+e-mail the files to [conference@thunderheadeng.com][emaillink].
+
+# PRESENTATION
+Each author must present his/her paper within the allotted time, allowing
+for some minutes of open discussion. The session chair is responsible for
+keeping authors within their time limit, in order to ensure that each
+author has enough time for their presentation. When preparing your
+presentation slides, make sure they are clear and large enough so that
+your audience can read them from as far as 80 feet away.
+
+All presentations will be made using the computer projector available in
+the conference room. We will not have overhead projectors or slide
+projectors in the meeting rooms.
+
+Your presentation, in final form, must be received by **October 15th,
+2016**. A final commit of the files to the GitHub repository is
+preferred. Once the final draft is complete and reviewed it will be
+merged into the master branch of the repository. If you decide to use
+some other tool for creating your presentation, PDF format is preferred,
+but ODP, PPT, or PPTX formats are acceptable. Please e-mail the files
+to [conference@thunderheadeng.com][emaillink].
+
+All presentations will be pre-loaded on the computers that are present.
+Please note that this approach will make it necessary for us to receive
+the presentation files prior to the conference. If you have a different
+software requirement, it should still be possible for you to attach your
+own computer to the projector if you bring it with you. This is not
+optimal, as it takes time and slows down the session.
+
+# CONFERENCE CONTENT DISTRIBUTION
+The papers and presentation materials will be made available online
+during and after the conference. In addition, the organizers are planning
+to may broadcast live presentations online during the event. The papers,
+presentations, and videos will be archived and made available on the web
+after the conference.
+
+Author(s) retain all rights to submitted material. The organizers are
+granted a non-exclusive right to copy and redistribute conference
+material submitted by the author(s).
+
+[BIB]
+
+&pagebreak;
+
+# An appendix { @h1:"A" }
+"All the same, I should like it all plain and clear," said he
+obstinately, putting on his business manner (usually reserved for people
+who tried to borrow money off him), and doing his best to appear wise and
+prudent and professional and live up to Gandalf's recommendation. "Also I
+should like to know about risks, out-of-pocket expenses, time required
+and remuneration, and so forth" -- by which he meant: "What am I going to
+get out of it? and am I going to come back alive?"
+
+# Conclusion
+If you have any questions concerning your paper and/or the Conference,
+please email us at [conference@thunderheadeng.com][emaillink].

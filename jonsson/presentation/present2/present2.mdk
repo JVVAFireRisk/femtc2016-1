@@ -127,201 +127,59 @@ Effectiveness of the smoke ventilation shaft between station and platforms
 ![GranVia_Pic]
 [GranVia_Pic]: images/GranVia_Pic.png "GranVia_Pic" { width:auto; max-width:90%}
 
-# Evacuation Analysis
-~ Begin Columns
-~ Column { width:50% }
-The final solution was based on the concept of introducing a protected corridor connecting the two stairs and also to create a safe route to outside once leaving the final stair, on top of that the different fire safety systems were heavily improved
-~
-~ Column
+## Evacuation Analysis
+The final solution was based on the concept of introducing a protected corridor connecting the two stairs
+
 ![GranVia_1]
-~
-~ End Columns
 
-[GranVia_1]: images/GranVia_1.png "GranVia_1" { width:auto; max-width:90% }
+## Evacuation Analysis
 
-## Reveal.js
+![GranVia2]
 
-`reveal.js` is a framework for easily creating beautiful presentations using
-HTML. You'll need a browser with support for CSS 3D transforms to see it in
-its full glory. 
+[GranVia2]: images/GranVia2.png "GranVia2" { width:auto; max-width:90% }
 
-And any Madoko features just work. Here is some math:
+# Logistics Centre
+* The last example is a large logistics centre
+* The objective of the study was to develop an alternative floor slab design, compared to the code requirement, so that the operation of the centre was not compromised
 
-~ Begin Framed { padding:1ex; margin-top:1ex }
-A famous equation is $e = mc^2$, but this one is 
-famous too:
+![Amazon_Pic]
+[Amazon_Pic]: images/Amazon_Pic.jpg "Amazon_Pic" { width:auto; max-width:90% }
 
-~ Equation  {#eq-gaussian}
-\int_{-\infty}^\infty e^{-a x^2} d x = \sqrt{\frac{\pi}{a}} 
-~
-~ End Framed
+# Logistics Centre
+* The national fire safety industrial code, specifically requirements regarding smoke movement, requires that intermediate floors have an opening area of at least 50% of the floor slab in the circulation areas, this is to permit smoke movement upwards
 
-~~ Notes
-Oh hey, these are some notes. They'll be hidden in your presentation, but you
-can see them if you open the speaker notes window (hit 's' on your keyboard).
-~~
+* The operation of the centre, the use of trolleys, needed a significantly less percentage of the floor to be open (steel mesh) due to operations procedures
 
-## Code
+# Comparative analysis (prescriptive vs proposed)
 
-Here is code, highlighted by Madoko 
+![Amazon1]
+[Amazon1]: images/Amazon1.png "Amazon1" { width:auto; max-width:90% }
 
-``` javascript
-function sqr( x ) {
-  var \(&pi;\) = 3.141593;
-  return x*x;  /* the square */
-}
-```
-We used `\(` and `\)` to escape into markdown to write &pi;.
+![Amazon3]
+[Amazon3]: images/Amazon3.png "Amazon3" { width:auto; max-width:90% }
 
-<!-- Example of nested vertical slides -->
-~ Begin Vertical { data-background:Gainsboro }
+# Results (prescriptive vs proposed)
 
-## Vertical Slides {#vertical}
-Slides can be nested inside of other slides,
-try pressing [down].
+![Amazon4]
+[Amazon4]: images/Amazon4.png "Amazon4" { width:auto; max-width:60% }
 
-[![arrowdown]][down]
+# Conclusions
 
+* The role of modelling in PBD projects is clearly gaining more and more importance
+* Both models used and shown in this paper, Pathfinder and FDS, has substantially evolved during the years
 
-[down]: # { .navigate-down }
-[arrowdown]: images/arrow.png "Down arrow" { width:178px; height:238px }
+All that being said, engineers must be aware that buildings might have been designed with the first versions of FDS and when Pathfinder was not as developed as it is now or probably not even born.
 
-## Basement Level 1
-Press down or up to navigate.
+Are those buildings unsafe? 
 
-## Basement Level 2
+# Conclusions
 
-Use `columns` to put blocks next to each other:
+* Such buildings are (or at least should be) as safe as modern buildings built nowadays and this is because of the engineering judgement undertaken in the analysis
+* Without the Engineering Judgement, the results obtained by advanced models might be totally useless; and this is not because of the models themselves but because of the inaccurate approach to them.
 
-~ Begin Columns
-~ Column { width:50% }
-A monarch butterfly (shown to the right)
-spends the winter in Mexico.
-~
-~ Column
-![butterfly]
-~
-~ End Columns
+# Driving a car
+* It requires the driver to skillfully deal with the steering wheel, use the brake, the clutch the gear and the accelerator
+* And what about cars circulating in the opposite direction, curves, slopes, velocity limits, signs to be read in real time, rear mirrors to be used simultaneously when looking at the road in front of you?
+* Knowing how to deal with the controls is not enough to survive in a busy street
 
-[butterfly]: images/butterfly.png "A Monarch butterfly" { width:280px; vertical-align:middle }
-
-
-<!-- 
-For local background images, we need to have a reference to the image
-such that it's data gets embedded into the HTML page. We define
-it using "display=none" so it is hidden in the presentation. 
-We can then refer to the image in "data-background-image". 
--->
-
-![bfly]
-[bfly]: images/butterfly.png "Butterfly" { display:none }
-
-## Basement Level 3 { data-background-image:images/butterfly.png }
-That's it, time to go back up.
-
-[![arrowup]][back2]
-
-[arrowup]:  images/arrow.png "Up arrow" { width:178px; height:238px; transform:rotate(180deg) }
-[back2]:    #vertical { .image }
-
-~ End Vertical
-
-
-## Themes {#themes}
-
-Reveal.js comes with a few themes built in:
-
-* [Default](?#/themes)
-* [Sky](?theme=sky#/themes)
-* [Beige](?theme=beige#/themes)
-* [Serif](?theme=serif#/themes)
-* [Simple](?theme=simple#/themes)
-* [Night](?theme=night#/themes)
-* [Moon](?theme=moon#/themes)
-* [Solarized](?theme=solarized#/themes)
-
-Theme demos are loaded after the presentation which leads to flicker. In
-production you should load your theme in the `<head>` using a
-`<link>`.
-
-## Transitions { #transitions }
-
-You can select from different transitions, like:\
-[Cube](?transition=cube#/transitions) -
-[Page](?transition=page#/transitions) -
-[Concave](?transition=concave#/transitions) -
-[Zoom](?transition=zoom#/transitions) -
-[Linear](?transition=linear#/transitions) -
-[Fade](?transition=fade#/transitions) -
-[None](?transition=none#/transitions) -
-[Default](?#/transitions)
-
-
-
-## Pauses?
-
-Some pauses.
-
-* {.fragment} One
-* {.fragment} Two
-* {.fragment} Three
-
-And more:
-
-- Test 1
-- Test 2
-- Test 3
-{.fragmented}
-
-Cool!.
-
-~ Slide
-A slide with no header
-~
-
-
-## Point of View
-
-In Reveal.js Press **ESC** to enter the slide overview.
-
-Hold down alt and click on any element to zoom in on it using 
- [zoom.js]. Alt + click anywhere to zoom back out.
-
-
-[zoom.js]: http://lab.hakim.se/zoom-js
-
-
-## Works in Mobile Safari
-
-Try it out! You can swipe through the slides and pinch your way to the
-overview.
-
-
-## Printing
-
-You can print a `revealjs` presentation nicely from the browser.
-
-First give the `?print-pdf` or `?print-paper` query on your final
-presentation (in the browser address bar) and then print from the Chrome
-browser selecting `Save to PDF`.
-
-Read more about it at the [revealjs documentation](https://github.com/hakimel/reveal.js#pdf-export)
-
-## RevealJS library
-
-Normally, the `revealjs` library is loaded from a CDN but you can specify your
-own url using metadata:
-
-    Reveal Url: <my url>
-
-This can be useful when using a [server to run revealjs](https://github.com/hakimel/reveal.js#full-setup)
-where you may use something like:
-
-    @nopreview Reveal Url: http://localhost:8000/reveal.js
-
-
-## Thanks for looking :-)
-
-[slide]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.html
-[slide-mdk]: https://www.madoko.net/editor.html?#url=http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/slidedemo.mdk&options={"delayedUpdate":"true"}
-[slide-pdf]: http://research.microsoft.com/en-us/um/people/daan/madoko/samples/slidedemo/out/slidedemo.pdf
+# Please drive safe

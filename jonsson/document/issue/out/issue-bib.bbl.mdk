@@ -1,0 +1,10 @@
+~ begin bibliography { .bib-numeric; cite-style:"numeric:'[',']',', '" ; caption:"2" ; data-style:"numeric" ; data-style:'madoko-numeric';  }
+~ begin bibitem {id:"Knuth:TeX"; cite-year:"1984"; cite-authors:"Knuth"; cite-authors-long:"Knuth"; cite-label:"1"; caption:"The TeX book&nl;Knuth, 1984"; data-line:"references.bib:1"; searchterm:"The%20TeX%20book%20Knuth%2C%201984"; bibitem-label:"\[1\]"}
+\/Donald E.&nbsp;Knuth. _The TeX Book_. Addison-Wesley. 1984.
+~ end bibitem
+
+~ begin bibitem {id:"Lamport:LaTeX"; cite-year:"1994"; cite-authors:"Lamport"; cite-authors-long:"Lamport"; cite-label:"2"; caption:"LaTeX: A Document Preparation System (2nd Edition)&nl;Lamport, 1994"; data-line:"references.bib:8"; searchterm:"LaTeX%3A%20A%20Document%20Preparation%20System%202nd%20Edition%20Lamport%2C%201994"; bibitem-label:"\[2\]"}
+\/Leslie Lamport. _LaTeX: A Document Preparation System (2nd Edition)_. Addison-Wesley. 1994. See also [@Knuth:TeX].
+~ end bibitem
+
+~ end bibliography

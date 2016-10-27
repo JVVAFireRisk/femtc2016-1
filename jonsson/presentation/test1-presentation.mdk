@@ -22,7 +22,7 @@ The increased use of performance-based design to develop fire safety solutions r
 
 # The Perfomance based design process
 
-The role of Advanced Modelling into the PBD process
+The role of Advanced Modelling in the PBD process
 
 ![PBD Chart]
 
@@ -38,7 +38,7 @@ Once the evaluation phase is reached in the performance base design process, it 
 
 # Case studies
 
-This section shows some example of complex projects where advanced modelling was an essential part of the design process
+This section shows some examples of complex projects where advanced modelling was an essential part of the design process
 
 * Large Airport
 * Interchange Station
@@ -61,13 +61,13 @@ This section shows some example of complex projects where advanced modelling was
 
 ## Evacuation analysis
 * The first step in the analysis was to evaluate the existing configuration
-* The analysis shows a few large bottleneck using the current evacuation strategy for this level
+* The analysis shows a few large bottlenecks using the current evacuation strategy for this level
 
 ![Barajas4]
 [Barajas4]: images/Barajas4.png "Barajas4" { width:auto; max-width:90% }
 
 ## Evacuation analysis
-By the increment of two corridors width together with the redirection of the part of the occupants toward the bridges instead of into a long corridors that was currently in use, the overall evacuation time was reduce by means of 30%.
+By incrementing the width of two corridors and redirect part of the occupants toward the fingers instead of into a single long corridor, the overall evacuation time was reduce by means of 30%.
 
 ![Barajas_6]
 [Barajas_6]: images/Barajas_6.jpg "Barajas_6" { width:auto; max-width:90% }
@@ -87,7 +87,7 @@ Results of current and proposed configuration
 ![Barajas2]
 
 ## Fire and Smoke analysis
-The overall results of the fire and smoke modelling shown that, despite the great volume of the terminal area, smoke had enough buoyancy to raise and fill the smoke reservoirs guaranteeing smoke layer stratification even with reasonably small fires with large spills (resulting in more and colder smoke). 
+The overall results of the fire and smoke modelling shown that, despite the great volume of the terminal area, smoke had enough buoyancy to raise and fill the smoke reservoirs guaranteeing a high level smoke layer even with reasonably small fires with large spills (resulting in more and colder smoke). 
 ![Barajas3]
 
 # Interchange Station
@@ -145,12 +145,12 @@ The final solution was based on the concept of introducing a protected corridor 
 ![Amazon_Pic]
 [Amazon_Pic]: images/Amazon_Pic.jpg "Amazon_Pic" { width:auto; max-width:90% }
 
-# Logistics Centre
+## Logistics Centre
 * The national fire safety industrial code, specifically requirements regarding smoke movement, requires that intermediate floors have an opening area of at least 50% of the floor slab in the circulation areas, this is to permit smoke movement upwards
 
 * The operation of the centre, the use of trolleys, needed a significantly less percentage of the floor to be open (steel mesh) due to operations procedures
 
-# Comparative analysis (prescriptive vs proposed)
+## Comparative analysis (prescriptive vs proposed)
 
 ![Amazon1]
 [Amazon1]: images/Amazon1.png "Amazon1" { width:auto; max-width:90% }
@@ -158,7 +158,7 @@ The final solution was based on the concept of introducing a protected corridor 
 ![Amazon3]
 [Amazon3]: images/Amazon3.png "Amazon3" { width:auto; max-width:90% }
 
-# Results (prescriptive vs proposed)
+## Results (prescriptive vs proposed)
 
 ![Amazon4]
 [Amazon4]: images/Amazon4.png "Amazon4" { width:auto; max-width:60% }
@@ -166,20 +166,25 @@ The final solution was based on the concept of introducing a protected corridor 
 # Conclusions
 
 * The role of modelling in PBD projects is clearly gaining more and more importance
+* A shift from less advanced modelling to more advanced modelling. Models used in the past as design tools are nowadays used as pre-analysis tools.  
+* Why is this? Client influence vs Engineering decision
+
+## Conclusions
 * Both models used and shown in this paper, Pathfinder and FDS, has substantially evolved during the years
 
-All that being said, engineers must be aware that buildings might have been designed with the first versions of FDS and when Pathfinder was not as developed as it is now or probably not even born.
+That being said, engineers must be aware of that buildings might have been designed with the first versions of FDS and when Pathfinder was not as developed as it is now or probably not even born.
 
 Are those buildings unsafe? 
 
-# Conclusions
+## Conclusions
 
 * Such buildings are (or at least should be) as safe as modern buildings built nowadays and this is because of the engineering judgement undertaken in the analysis
 * Without the Engineering Judgement, the results obtained by advanced models might be totally useless; and this is not because of the models themselves but because of the inaccurate approach to them.
 
-# Driving a car
+## Driving a car
 * It requires the driver to skillfully deal with the steering wheel, use the brake, the clutch the gear and the accelerator
 * And what about cars circulating in the opposite direction, curves, slopes, velocity limits, signs to be read in real time, rear mirrors to be used simultaneously when looking at the road in front of you?
 * Knowing how to deal with the controls is not enough to survive in a busy street
+* The same is valid for advanced modelling, it is not enough to understand the model it is also necessary to know the "surroundings"
 
-# Please drive safe
+## Please drive safe

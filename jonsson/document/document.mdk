@@ -57,13 +57,13 @@ Within a complex performance-based fire safety project, advanced modelling cover
 ~
 
 Each element of the flow chart are essential and responsible for the final outcome. An analysis undertaken through advanced modelling can be right or wrong depending on how those earlier elements were introduced in the overall analysis itself.
-Once the evaluation phase is reached in the performance base design process, it is time to get into the modelling exercise. Figure X, below, shows the process of determining the right model to be used in the analysis. The model can be a simple algebraic correlations that can be solved with a calculator, a zone models or lumped parameter models that represent a space as a small number of elements, to computational fluid dynamics or field models which approximate a space as a large number of discrete volumes.
+Once the evaluation phase is reached in the performance base design process, it is time to get into the modelling exercise. The figure below, shows the process of determining the right model to be used in the analysis. The model can be a simple algebraic correlations that can be solved with a calculator, a zone models or lumped parameter models that represent a space as a small number of elements, to computational fluid dynamics or field models which approximate a space as a large number of discrete volumes.
 
 [Modelling_flowchart]: images/Modelling_flowchart.png "Modelling_flowchart" { width:auto; max-width:90% }
 ~ Figure { #PBD Chart; caption:"Fire Model Selection Flow Chart."}
 ![Modelling_flowchart]
 ~
-Story of success exists where the use of performance-based design solutions has leaded to truly advanced solutions which have benefited the client and the building.
+Story of success exists where the use of performance-based design solutions has led to truly advanced solutions which have benefited the client and the building.
 Four examples have been selected and shown in this paper, outlining the role of the advanced modelling in the overall design process.
 
 # CASES STUDIES { #sec-intro }
@@ -71,7 +71,7 @@ Four examples have been selected and shown in this paper, outlining the role of 
 The first example is the largest and busiest airport in Spain. The overall objective of the project was to evaluate the current fire safety level for all existing terminals. The study was specifically orientated at fire risks, the main objective was to identify additional fire safety measures that could be incorporated into the building and also quantify how these measures impacted on the current fire safety level.
 Specifically for this example, the largest terminal (T4) is shown. Due to the complexity and dimension of the building, advanced modelling was necessary.
 Both advanced evacuation analysis and Fire and Smoke modelling were performed for the terminal with the aim of evaluating the efficiency of the current evacuation routes together with the efficiency of the smoke control system, when available. For this analysis, Pathfinder 2015 was used for the evacuation modelling and FDS v.6.2.0 for the fire and smoke modelling.
-The first step in the analysis was to evaluate the existing configuration. The following image shows an example, commercial area in the airside departures level, during a simulated evacuation. As can be seen on the image a few large bottleneck areas were created using the current evaluation strategy for this level. 
+The first step in the analysis was to evaluate the existing configuration. The following image shows an example, ancommercial area within the airside departures level, during a simulated evacuation. As can be seen on the image a few large bottleneck areas were created using the current evaluation strategy for this level. 
 
 ![Barajas4]
 ~ Figure { #Barajas4; caption:"Evaluation of the current configuration of the area with Pathfinder."}
@@ -92,7 +92,7 @@ The analysis of the current configuration shown various conflictive points where
 ~
 
 In addition, there were several exits that were sub-utilized and did not really add value to the evacuation. By the introduction of a clearer wayfinding system (signage), omitting exits and creating additional exits (using existing non-used routes), there was a clear improvement in both evacuation time (reduced about 40 %) and in regards to the bottlenecks (which were heavily reduced as well). 
-Together with the evacuation analysis, conditions for the occupants in case of fire have been assessed through fire and smoke modelling. The whole terminal has been modelled since it represented a single unique large compartment. The model was processed with FDS v.6.2.0, the domain was split into 30 different meshes assigned to 30 MPI processes, with a resolution varying from 0.10 m in the fire region up to 0.40 m in the regions far from the fire.
+Together with the evacuation analysis, conditions for the occupants in case of fire were assessed through fire and smoke modelling. The whole terminal has been modelled since it represented a single unique large compartment. The model was processed with FDS v.6.2.0, the domain was split into 30 different meshes assigned to 30 MPI processes, with a resolution varying from 0.10 m in the fire region up to 0.40 m in the regions far from the fire.
 
 ![Barajas1]
 ~ Figure { #Barajas_1; caption:"FDS Model of the terminal, birdeye view."}
@@ -126,7 +126,7 @@ The CFD model was processed with FDS v.6.0.0, the domain was split into 15 diffe
 ~ Figure { #Porta Susa_1; caption:"Correspondence between the FDS model and the real building."}
 [Porta Susa_1]: images/Porta-Susa_1.png "Porta Susa_1" { width:auto; max-width:90% }
 ~
-Before evaluating the design, the analysis required a dedicate pre-analysis so that the peculiarities of ventilation conditions could be taken into account. A robust sensitivity study of the input parameters was then performed, all with the objective to minimize uncertainty and maximize reliability of the results, this was especially important as natural ventilation of the station was used. 
+Before evaluating the design, the analysis required a complex pre-analysis so that the peculiarities of ventilation conditions could be taken into account. A robust sensitivity study of the input parameters was then performed, all with the objective to minimize uncertainty and maximize reliability of the results, this was especially important as natural ventilation of the station was used. 
 The image below, shows through a visibility isosurface the effectiveness of the natural smoke control system particularly when passing through the natural shafts designed in the interface between the station buildings and the platforms.
 
 
@@ -154,7 +154,7 @@ The benefit, or actually the need, of using computer modelling, to determine the
 The third example is a heritage protected multiuse building in the centre of Madrid, Spain. Part of the building was to be transformed into an apartment hotel, the refurbishment was heavily limited due to the heritage status of the building, and no major design changes could be incorporated.
 The national legislation requires that for any major refurbishment the requirements of the current legislative document, for fire safety, must be fulfilled. This was a major problem for a relatively old existing building which is also heritage protected, the only viable option was to use a performance based approach. The national code requires the evacuation design to be based on the use of two independent evacuation stairs, the building was equipped with two evacuation stairs but they were not independent and they did not lead directly to outside, so there was a major problem regarding evacuation from the building.
 A significant part of the project was to evaluate, mainly from a viability point of view, all the different options that seemed to be possible. The main limitation being that no major refurbishment works could be introduced. The final solution was based on the concept of introducing a protected corridor connecting the two stairs and also to create a safe route to outside once leaving the final stair, on top of that the different fire safety systems were heavily improved. 
-The following image gives an understanding of the concept solution developed. The two protected stairs are connected at basement level via a protected corridor, the final exit area have been compartmented from other uses and low fire load approach (basically non-existing fire load and  reduced ignition sources) has been incorporated.
+The following image gives an understanding of the concept solution developed. The two protected stairs are connected at basement level via a protected corridor, the final exit area have been compartmented from other uses and low fire load approach (basically non-existing fire load and  reduced ignition sources) was incorporated.
 
 
 ![GranVia_1]
